@@ -1,0 +1,35 @@
+site_name: JustACloudNerd
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - navigation.tabs.sticky
+  palette:
+    # Palette toggle for light mode
+    - scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
