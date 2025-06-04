@@ -1,6 +1,12 @@
 site_name: JustACloudNerd
 theme:
   name: material
+  language: en
+  favicon: images/nerd.png
+  font:
+      text: Roboto
+  icon:
+      logo: fontawesome/solid/clover
   features:
     - content.code.annotate
     - content.code.copy
@@ -17,19 +23,64 @@ theme:
     - search.share
     - search.suggest
     # - navigation.tabs.sticky
-  palette:
-    # Palette toggle for light mode
-    - scheme: slate
-      primary: black
-      accent: green
-      toggle:
-        icon: material/weather-night 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
+  plugins:
+    - typeset
+    - search
+  palette: # Palette toggle for light mode
     - scheme: default
-      primary: blue
-      accent: deep orange
+      primary: black # Primary defines the primary color of the theme.
+      accent: purple # Accent specifies the accent color of the theme.
+      toggle: # toggle specifies the icon and name for toggling between light and dark modes.
+        icon: material/toggle-switch
+        name: Switch to dark mode
+  # Palette toggle for dark mode
+    - scheme: slate
+      primary: white
+      accent: deep purple
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch-off-outline
         name: Switch to light mode
+markdown_extensions: 
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+copyright: Copyright © 2025 JustACloudNerd ❤️ Gajju
+extra_css:
+  - stylesheets/extra.css
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/gajanandsingh1612
+nav:
+  - Home: index.md
+  - Azure:
+      - Introduction: Azure/intro.md
+      - Networking:
+        - VPC: Azure/Networking/VPC/Introduction/intro.md
+        - Subnet: 
+            - Introduction: azure/vpc/setup.md
+            - Setup: azure/vpc/setup.md
+            - Security: azure/vpc/security.md
+            - Monitoring: azure/vpc/monitoring.md
+      - AKS:
+          - Introduction: Azure/AKS/intro.md
+          - Setup: aks/setup.md
+          - Networking: aks/networking.md
+          - Storage: aks/storage.md
+          - Security: aks/security.md
+          - Monitoring: aks/monitoring.md
+  - CertDirectory: https://certdirectory.io/profile/69dcab74-c7bc-4413-852a-754c85dfa20c
+
+
+
+
+
+
+
