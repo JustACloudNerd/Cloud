@@ -19,17 +19,26 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.expand # This feature will expand the navigation menu by default.
     - search.highlight
     - search.share
     - search.suggest
+    - search.highlight
     # - navigation.tabs.sticky
   plugins:
     - typeset
     - search
+    - blog
+    - tags:
+      tags_file: tags.md
+    
   palette: # Palette toggle for light mode
     - scheme: default
       primary: black # Primary defines the primary color of the theme.
-      accent: purple # Accent specifies the accent color of the theme.
+      accent: deep purple # Accent specifies the accent color of the theme.
       toggle: # toggle specifies the icon and name for toggling between light and dark modes.
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -41,43 +50,57 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
+
 markdown_extensions: 
   - admonition
   - pymdownx.superfences
   - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
-copyright: Copyright © 2025 JustACloudNerd ❤️ Gajju
+
+copyright: Copyright © 2025 JustACloudNerd
+
 extra_css:
   - stylesheets/extra.css
+
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/gajanandsingh1612
+      # link: https://www.linkedin.com/in/gajanandsingh1612
+    - icon: material/certificate
+      # link: https://certdirectory.io/profile/69dcab74-c7bc-4413-852a-754c85dfa20c
+
 nav:
   - Home: index.md
   - Azure:
-      - Introduction: Azure/intro.md
+      # - Introduction: Azure/intro.md
       - Networking:
-        - VPC: Azure/Networking/VPC/Introduction/intro.md
+        - Virtual Private Network: 
+            - Overview: Azure/Networking/VNET/Introduction/intro.md
         - Subnet: 
-            - Introduction: azure/vpc/setup.md
-            - Setup: azure/vpc/setup.md
+            - Overview: Azure/Networking/subnet/intro.md
             - Security: azure/vpc/security.md
             - Monitoring: azure/vpc/monitoring.md
-      - AKS:
-          - Introduction: Azure/AKS/intro.md
-          - Setup: aks/setup.md
-          - Networking: aks/networking.md
-          - Storage: aks/storage.md
-          - Security: aks/security.md
-          - Monitoring: aks/monitoring.md
-  - CertDirectory: https://certdirectory.io/profile/69dcab74-c7bc-4413-852a-754c85dfa20c
+  #     - AKS:
+  #         - Introduction: Azure/AKS/intro.md
+  #         - Setup: aks/setup.md
+  #         - Networking: aks/networking.md
+  #         - Storage: aks/storage.md
+  #         - Security: aks/security.md
+  #         - Monitoring: aks/monitoring.md
+  # - Blog:
+  #   - blog/posts/05-06-2025.md
 
 
 
