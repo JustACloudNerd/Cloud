@@ -9,6 +9,9 @@ icon: material/arrow-right-bold
 
 
 
+!!! note "Note"
+
+    We can only have <strong> 3,000 <strong> subnets in a virtual network.
 
 
 
@@ -23,7 +26,6 @@ icon: material/arrow-right-bold
 
 
 
+<!-- !!! pied-piper "Intro Note for VPC"
 
-!!! pied-piper "Intro Note for VPC"
-
-    Hello Everyone, thank you for Visiting my site!!!
+    Hello Everyone, thank you for Visiting my site!!! -->

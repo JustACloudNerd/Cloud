@@ -7,6 +7,8 @@ theme:
       text: Roboto
   icon:
       logo: fontawesome/solid/clover
+      admonition:
+        note: octicons/tag-16
   features:
     - content.code.annotate
     - content.code.copy
@@ -99,6 +101,12 @@ nav:
   #         - Storage: aks/storage.md
   #         - Security: aks/security.md
   #         - Monitoring: aks/monitoring.md
+  - Kubernetes:
+      - SealedSecrets: kubernetes/sealsecrets/intro.md
+  - Pulumi:
+      - Introduction: pulumi/intro.md
+      - Setup: pulumi/setup.md
+
   # - Blog:
   #   - blog/posts/05-06-2025.md
 
