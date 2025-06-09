@@ -47,6 +47,7 @@ kubectl apply -f sealsecret.yaml
 Use the Bitnami Helm chart to deploy the [Sealed Secrets Operator](https://artifacthub.io/packages/helm/bitnami/sealed-secrets?modal=install).
 
 ``` yaml
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install sealed-secrets bitnami/sealed-secrets --namespace kube-system
 ```
